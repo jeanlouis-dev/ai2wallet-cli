@@ -1,5 +1,5 @@
 {
-  "name": "ai2wallet-cli",
+  "name": "ai2wallet",
   "version": "0.0.1-beta",
   "description": "CLI tool to bootstrap a full ready ai2wallet project",
   "main": "index.ts",

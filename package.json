@@ -1,0 +1,38 @@
+{
+  "name": "ai2wallet-cli",
+  "version": "0.0.1-beta",
+  "description": "CLI tool to bootstrap a full ready ai2wallet project",
+  "main": "index.ts",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeanlouis-dev/ai2wallet-cli"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsup && cp ./src/index.d.ts dist"
+  },
+  "bin": {
+    "ai2wallet": "./dist/index.js"
+  },
+  "keywords": [
+    "ai2wallet",
+    "x402",
+    "blockchain",
+    "agents",
+    "wallets",
+    "CLI"
+  ],
+  "author": "jean-louis",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@clack/prompts": "^1.2.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "rimraf": "^6.1.3",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
+  }
+}

@@ -126,7 +126,7 @@ async function main() {
     {
       title: 'Setting MCP Server...',
       task: async () => {
-        exec(`git clone -b ${"stellar"} ${EXPRESS_MCP_SERVER} ${name + "/server"}`, (error, stdout, stderr) => {
+        exec(`git clone ${EXPRESS_MCP_SERVER} ${name + "/server"}`, (error, stdout, stderr) => {
           if (error) {
 
             console.error(`Error: ${error.message}`);
@@ -141,7 +141,7 @@ async function main() {
       title: 'Setting Facilitator...',
       task: async () => {
         if(selfHostFacilitator){
-        exec(`git clone -b ${"stellar"} ${EXPRESS_FACILITATOR} ${name + "/facilitator"}`, (error, stdout, stderr) => {
+        exec(`git clone ${EXPRESS_FACILITATOR} ${name + "/facilitator"}`, (error, stdout, stderr) => {
           if (error) {
 
             console.error(`Error: ${error.message}`);
@@ -157,7 +157,7 @@ async function main() {
     },
   ]);
 
-  spin.stop('Congratulation 🎉 your project is ready. see README.md for further config and running !');
+  spin.stop('Congratulation 🎉 your project is ready. see README.md for further config and how to run !');
 }
 
 main().catch(console.error);

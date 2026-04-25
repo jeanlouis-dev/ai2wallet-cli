@@ -1,7 +1,7 @@
 {
   "name": "ai2wallet",
-  "version": "0.0.1-beta",
-  "description": "CLI tool to bootstrap a full ready ai2wallet project",
+  "version": "0.0.2",
+  "description": "CLI tool to scaffold a full ready project on top of ai2wallet SDK",
   "main": "index.ts",
   "type": "module",
   "types": "./dist/index.d.ts",
